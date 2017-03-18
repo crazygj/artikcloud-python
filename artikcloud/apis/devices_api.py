@@ -863,7 +863,7 @@ class DevicesApi(object):
         form_params = []
         local_var_files = {}
 
-        body_params = None
+        body_params = "{}"
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -873,7 +873,7 @@ class DevicesApi(object):
 
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['text/plain'])
+            select_header_content_type(['application/json'])
 
         # Authentication setting
         auth_settings = ['artikcloud_oauth']
